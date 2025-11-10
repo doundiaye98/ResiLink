@@ -87,7 +87,7 @@ $event_count = $pdo->query("SELECT COUNT(*) FROM posts WHERE type = 'event'")->f
             <div class="hero-summary shadow-lg">
                 <div class="row g-3">
                     <div class="col-6">
-                        <div class="metric-card">
+                        <a href="profile.php" class="metric-card text-decoration-none">
                             <div class="metric-icon bg-gradient-primary">
                                 <i class="bi bi-people"></i>
                             </div>
@@ -95,10 +95,10 @@ $event_count = $pdo->query("SELECT COUNT(*) FROM posts WHERE type = 'event'")->f
                                 <span class="metric-value"><?= number_format($total_users, 0, ',', ' ') ?></span>
                                 <span class="metric-label">Résidents actifs</span>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="col-6">
-                        <div class="metric-card">
+                        <a href="?filter=issue" class="metric-card text-decoration-none">
                             <div class="metric-icon bg-gradient-success">
                                 <i class="bi bi-shield-check"></i>
                             </div>
@@ -106,10 +106,10 @@ $event_count = $pdo->query("SELECT COUNT(*) FROM posts WHERE type = 'event'")->f
                                 <span class="metric-value"><?= number_format($resolved_issues, 0, ',', ' ') ?></span>
                                 <span class="metric-label">Incidents résolus</span>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="col-12">
-                        <div class="metric-card">
+                        <a href="?filter=event" class="metric-card text-decoration-none">
                             <div class="metric-icon bg-gradient-warning">
                                 <i class="bi bi-calendar-event"></i>
                             </div>
@@ -117,7 +117,7 @@ $event_count = $pdo->query("SELECT COUNT(*) FROM posts WHERE type = 'event'")->f
                                 <span class="metric-value"><?= number_format($event_count, 0, ',', ' ') ?></span>
                                 <span class="metric-label">Événements prévus</span>
                             </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
                 <div class="hero-quote mt-4">

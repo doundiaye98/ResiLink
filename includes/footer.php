@@ -2,7 +2,7 @@
     </main>
     <footer class="bg-light mt-5 py-4">
         <div class="container text-center">
-            <p class="mb-0">&copy; 2024 ResiLink - Votre réseau social résidentiel</p>
+            <p class="mb-0 text-primary">&copy; 2025 ResiLink - Votre réseau social résidentiel</p>
             <p class="mb-0 mt-2">
                 <small class="text-muted">Développé avec ❤️ par 
                     <a href="https://s2ntech.com" target="_blank" class="text-decoration-none fw-bold">S2NTech</a>
