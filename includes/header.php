@@ -14,13 +14,13 @@ require_once __DIR__ . '/../config/database.php';
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+<body class="site-body d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
         <div class="container">
             <a class="navbar-brand" href="index.php">
                 <i class="bi bi-people-fill"></i> ResiLink
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Basculer la navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -53,7 +53,7 @@ require_once __DIR__ . '/../config/database.php';
                 <ul class="navbar-nav">
                     <?php if (isLoggedIn()): ?>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="notificationsDropdown" role="button" data-bs-toggle="dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="notificationsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <i class="bi bi-bell"></i>
                                 <span class="badge bg-danger" id="notificationBadge">0</span>
                             </a>
@@ -82,5 +82,6 @@ require_once __DIR__ . '/../config/database.php';
             </div>
         </div>
     </nav>
-    <div class="container mt-4">
+    <main class="site-main flex-grow-1 py-4">
+        <div class="container site-container">
 
